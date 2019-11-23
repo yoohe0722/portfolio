@@ -32,11 +32,14 @@ $(function () {
     return false;
   });
 
-  //.accordion1の中のp要素がクリックされたら
-	$('.accordion1 p').click(function(){
+  //.accordion2の中のp要素がクリックされたら
+  $('.accordion2 p').on('click', function(){
 
-//クリックされた.accordion1の中のp要素に隣接するul要素が開いたり閉じたりする。
-		$(this).next('ul').slideToggle();
-});
+  //クリックされた.accordion2の中のp要素に隣接する.accordion2の中の.innerを開いたり閉じたりする。
+  $(this).next('.accordion2 .inner').slideToggle();
+
+  //クリックされた.accordion2の中のp要素以外の.accordion2の中のp要素に隣接する.accordion2の中の.innerを閉じる
+  $('.accordion2 p').not($(this)).next('.accordion2 .inner').slideUp();
+  });
 
 });

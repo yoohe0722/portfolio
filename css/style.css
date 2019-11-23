@@ -377,6 +377,10 @@ li {
   font-size: 12px;
 }
 
+.accordion2 .inner {display: none;}
+.accordion2 p {cursor: pointer; padding: 10px; font-weight: bold; color: #1ca9e3;}
+
+
 /*--------------------------------
  SKILL
 ---------------------------------*/
