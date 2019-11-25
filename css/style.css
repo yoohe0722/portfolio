@@ -137,13 +137,26 @@ li {
   align-items: center;
   justify-content: center;
   height: 86vh;
-  background-image: url("../img/bg_header_1.jpg") ;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   color: white;
   text-shadow: 2px 2px 3px black;
 }
+
+#header {
+  background-image: url("../img/bg_header_1.jpg") ;
+  /* background: image-url("top-banner-autumn-fes.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* #header .banner-2 {
+  /* background-image: url("../img/bg_header_2.jpg") ; */
+  /* background-image: url("../img/bg_header_2.jpg") ; */
+  background-repeat: no-repeat;
+  /* background-size: cover;
+  background-position: center center;
+} */
+
 
 #header .logo {
   position: relative;
@@ -380,6 +393,15 @@ li {
 .accordion2 .inner {display: none;}
 .accordion2 p {cursor: pointer; padding: 10px; font-weight: bold; color: #1ca9e3;}
 
+.underline {
+  background: linear-gradient(transparent 70%, yellow 70%);
+}
+
+#career .memo {
+  font-size: 10px;
+  /* background: linear-gradient(transparent 0%, white 0%); */
+}
+
 
 /*--------------------------------
  SKILL
@@ -401,7 +423,7 @@ li {
 }
 
 #skill .skill-icon {
-  flex-basis: 60px;
+  /* flex-basis: 60px; */
 }
 
 #skill .skill-desc {
@@ -618,6 +640,10 @@ li {
     font-size: 10px;
   }
 
+  #career .box {
+    width: 90%;
+  }
+
   #works .card:nth-child(2n+1):nth-last-child(-n+2),
   #works .card:nth-child(2n+1):nth-last-child(-n+2)~div {
     margin-bottom: 0;
@@ -656,15 +682,15 @@ li {
   }
 
   #skill .skill-icon {
-    flex-basis: 45px;
+    /* flex-basis: 45px; */
   }
 
   #skill .skill-icon img {
-    width: 45px;
+    /* width: 45px; */
   }
 
   #skill .skill-desc {
-    flex-basis: calc(100% - 45px - 10px);
+    flex-basis: calc(100% - 10px);
   }
 
   #skill .rate {
