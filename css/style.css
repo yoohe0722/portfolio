@@ -369,7 +369,7 @@ li {
 ---------------------------------*/
 
 #career .box {
-  background-color: #f7f7f7;
+  background-color: #fff;
   padding: 20px;
   width: 60vw;
   margin: 20px auto;
@@ -521,6 +521,9 @@ li {
   text-align: center;
 }
 
+
+
+
 /*--------------------------------
  Footer
 ---------------------------------*/
@@ -538,6 +541,7 @@ li {
   text-align: center;
   color: #8c8c8c;
 }
+
 
 /*media Queries 767
 ----------------------------------------------------*/
@@ -682,11 +686,11 @@ li {
   }
 
   #skill .skill-icon {
-    /* flex-basis: 45px; */
+    flex-basis: 45px;
   }
 
   #skill .skill-icon img {
-    /* width: 45px; */
+    width: 45px;
   }
 
   #skill .skill-desc {
