@@ -331,6 +331,16 @@ li {
   flex-basis: 37%;
 }
 
+#feature .section-text p {
+  font-size: 12px;
+}
+
+#feature .desc-title {
+  font-weight: bold;
+  font-size: 13px;
+  border-bottom: 1px solid gray;
+}
+
 /*--------------------------------
  ABOUT
 ---------------------------------*/
@@ -490,10 +500,10 @@ li {
 
 #contact .contact-list ul {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 150px;
+  width: 25vw;
   margin: 0 auto;
 }
 
@@ -516,8 +526,9 @@ li {
 }
 
 #contact .contact-other {
-  font-size: 14px;
-  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
   text-align: center;
 }
 
@@ -539,7 +550,7 @@ li {
 }
 
 #footer .copyright {
-  font-size: 10px;
+  font-size: 16px;
   text-align: center;
   color: #8c8c8c;
 }
