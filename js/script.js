@@ -42,4 +42,26 @@ $(function () {
   $('.accordion2 p').not($(this)).next('.accordion2 .inner').slideUp();
   });
 
+  // $(".inview_re").on("inview",function(event,isInView,visiblepartX,visiblepartY) {
+  //   if(isInView){
+  //     $(this).stop().addClass("is-show");
+  //   }
+  //   else{
+  //     $(this).stop().removeClass('is-show');
+  //   }
+  // });
 });
+
+$(function() {
+  $(".inview_re").on("inview",function(event,isInView,visiblepartX,visiblepartY) {
+    if(isInView){
+      $(this).stop().addClass("is-show");
+    }
+    else{
+      $(this).stop().removeClass('is-show');
+    }
+  });
+});
+
+
+
