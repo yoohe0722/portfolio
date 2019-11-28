@@ -37,7 +37,7 @@
 	width: 25%;
 	padding-right: 100px;
 	position: absolute;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .cbp_tmtimeline > li .cbp_tmtime span {
@@ -46,8 +46,8 @@
 }
 
 .cbp_tmtimeline > li .cbp_tmtime span:first-child {
-	/* font-size: 0.9em; */
-	/* color: #bdd0db; */
+	/* font-size: 0.9em;
+	color: #bdd0db; */
 }
 
 .cbp_tmtimeline > li .cbp_tmtime span:last-child {
@@ -62,10 +62,11 @@
 /* Right content */
 .cbp_tmtimeline > li .cbp_tmlabel {
 	margin: 0 0 15px 25%;
-	background: #f7f7f7;
+	/* background: #f7f7f7; */
+	background: white;
 	color: #333;
-	padding: 2em;
-	/* font-size: 1.2em; */
+	padding: 1em 2em 1em 2em;
+	font-size: 0.8em;
 	/* font-weight: 300; */
 	/* line-height: 1.4; */
 	position: relative;
@@ -112,47 +113,57 @@
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
-	font-size: 1.4em;
-	line-height: 40px;
+	font-size: 1.3em;
+	line-height: 30px;
 	-webkit-font-smoothing: antialiased;
 	position: absolute;
-	color: #fff;
+	color: #ffffff;
+	z-index: 10;
 	background: orange;
 	border-radius: 50%;
 	box-shadow: 0 0 0 8px rgb(247, 185, 80) ;
 	text-align: center;
 	left: 20%;
-	top: 0;
+	/* top: 0; */
 	margin: 0 0 0 -25px;
+	/* vertical-align: middle; */
+}
+
+.cbp_tmtimeline > li .cbp_tmicon i {
+	padding-bottom: 5px;
 }
 
 .cbp_tmicon-phone:before {
-	content: "\e000";
+	/* content: "\e000"; */
 }
 
 .cbp_tmicon-screen:before {
-	content: "\e001";
+	/* content: "\e001"; */
 }
 
 .cbp_tmicon-mail:before {
-	content: "\e002";
+	/* content: "\e002"; */
 }
 
 .cbp_tmicon-earth:before {
-	content: "\e003";
+	/* content: "\e003"; */
 }
 
 /* Example Media Queries */
 @media screen and (max-width: 65.375em) {
 
 	.cbp_tmtimeline > li .cbp_tmtime span:last-child {
-		font-size: 1.5em;
+		/* font-size: 1.5em; */
 	}
 }
 
 @media screen and (max-width: 47.2em) {
 	.cbp_tmtimeline:before {
 		display: none;
+	}
+
+	.cbp_tmtimeline {
+		width: 85vw;
 	}
 
 	.cbp_tmtimeline > li .cbp_tmtime {
@@ -162,27 +173,28 @@
 	}
 
 	.cbp_tmtimeline > li .cbp_tmtime span {
-		text-align: left;
+		display: inline;
 	}
 
 	.cbp_tmtimeline > li .cbp_tmlabel {
 		margin: 0 0 30px 0;
 		padding: 1em;
 		font-weight: 400;
-		font-size: 95%;
+		font-size: 0.6rem;
+		color: #555555;
 	}
 
 	.cbp_tmtimeline > li .cbp_tmlabel:after {
 		right: auto;
-		left: 20px;
+		left: 50px;
 		border-right-color: transparent;
-		border-bottom-color: #3594cb;
+		border-bottom-color: #f7f7f7;
 		top: -20px;
 	}
 
 	.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
 		border-right-color: transparent;
-		border-bottom-color: #6cbfee;
+		border-bottom-color: #f7f7f7;
 	}
 
 	.cbp_tmtimeline > li .cbp_tmicon {
@@ -190,6 +202,8 @@
 		float: right;
 		left: auto;
 		margin: -55px 5px 0 0px;
-	}	
+	}
+	
+
 }
 
