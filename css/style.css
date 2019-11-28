@@ -364,6 +364,8 @@ li {
 
 #about .section-image img {
   margin: 0 auto;
+  width: 200px;
+  height: 175px;
   border-radius: 50%;
   box-shadow: 0 0 25px 0 #d9d9d9;
 }
@@ -404,9 +406,8 @@ li {
 
 #about span {
   font-size: 7px;
-  line-height: 1.5;
+  line-height: 1.3;
   display: block;
-  /* padding-top: 5px; */
   padding-left: 5px;
   width: 90%;
 }
@@ -727,11 +728,16 @@ li {
     flex-basis: 90%;
     margin-bottom: 30px;
     padding-bottom: 40px;
+    margin: 0 auto;
   }
 
   #feature .section-image,
   #feature .section-desc {
     flex-basis: 100%;
+  }
+
+  #feature .section-text p {
+    font-size: 0.7rem;
   }
 
   #feature .section-image {
@@ -746,6 +752,25 @@ li {
   #about .section-image {
     flex-basis: 100px;
     margin: 0 auto 20px;
+    padding-top: 0px;
+  }
+
+  #about .section-image img{
+    height: 100px;
+    width: 250px;
+  }
+
+  #about .section-text{
+  font-size: 0.8rem;
+  }
+
+  #about span{
+    font-size: 5px;
+    width: 100%;
+  }
+
+  #about .section-desc span br{
+    display: none
   }
 
   #skill .card-wrapper {
