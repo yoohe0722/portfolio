@@ -331,6 +331,16 @@ li {
   flex-basis: 37%;
 }
 
+#feature .section-text p {
+  font-size: 12px;
+}
+
+#feature .desc-title {
+  font-weight: bold;
+  font-size: 13px;
+  border-bottom: 1px solid gray;
+}
+
 /*--------------------------------
  ABOUT
 ---------------------------------*/
@@ -344,6 +354,7 @@ li {
 #about .section-image {
   flex-basis: 20%;
   margin: 0 auto;
+  padding-top: 25px;
 }
 
 #about .section-image a {
@@ -353,6 +364,8 @@ li {
 
 #about .section-image img {
   margin: 0 auto;
+  width: 200px;
+  height: 175px;
   border-radius: 50%;
   box-shadow: 0 0 25px 0 #d9d9d9;
 }
@@ -360,8 +373,57 @@ li {
 #about .section-desc {
   flex-basis: 62%;
 }
+
 #about .my-name {
   font-size: 20px;
+}
+
+#about .about-desc {
+  /* width: 70vw; */
+  padding: 75px 0px 30px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#about .desc-title {
+  flex-basis: 30%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 50px 0 50px;
+  border-right: 3px solid gray;
+}
+#about .desc-text {
+  flex-basis: 70%;
+}
+
+#about .character-text {
+  color: #555555;
+  font-size: 0.8em;
+}
+
+#about span {
+  font-size: 7px;
+  line-height: 1.3;
+  display: block;
+  padding-left: 5px;
+  width: 90%;
+}
+#about .character-name {
+  font-weight: bold;
+  padding-top: 10px;
+  border-bottom: 2px dotted gray;
+}
+
+#about i {
+  color: rgb(176, 226, 100);
+  font-size: 15px;
+}
+
+#about .section-desc {
+  color: #555555;
 }
 
 /*--------------------------------
@@ -377,21 +439,25 @@ li {
 }
 
 #career .box-title {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   border-bottom: dotted  rgba(0, 0, 0, .1);
 }
 
-#career .box-title {
-  font-size: 15px;
+#career .box-desc {
+  font-size: 0.8em;
 }
 
-#career .box-decs {
-  font-size: 12px;
+.accordion2 .inner {
+  display: none;
 }
 
-.accordion2 .inner {display: none;}
-.accordion2 p {cursor: pointer; padding: 10px; font-weight: bold; color: #1ca9e3;}
+.accordion2 p {
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+  color: #1ca9e3;
+}
 
 .underline {
   background: linear-gradient(transparent 70%, yellow 70%);
@@ -487,20 +553,22 @@ li {
 /*--------------------------------
  CONTACT
 ---------------------------------*/
-
-#contact .contact-list ul {
-  display: flex;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 150px;
+#contact .section-body {
   margin: 0 auto;
 }
 
-#contact .contact-list li {
-  display: flex;
+#contact .contact-list ul {
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  width: 90vw;
+  margin: 0 auto;
   text-align: center;
+}
+
+#contact .contact-list li {
+  align-items: center;
 }
 
 #contact .contact-list li a {
@@ -516,12 +584,15 @@ li {
 }
 
 #contact .contact-other {
-  font-size: 14px;
-  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
   text-align: center;
 }
 
-
+/*--------------------------------
+ History
+---------------------------------*/
 
 
 /*--------------------------------
@@ -537,7 +608,7 @@ li {
 }
 
 #footer .copyright {
-  font-size: 10px;
+  font-size: 16px;
   text-align: center;
   color: #8c8c8c;
 }
@@ -654,13 +725,19 @@ li {
   }
 
   #works .card {
-    flex-basis: 48%;
+    flex-basis: 90%;
     margin-bottom: 30px;
+    padding-bottom: 40px;
+    margin: 0 auto;
   }
 
   #feature .section-image,
   #feature .section-desc {
     flex-basis: 100%;
+  }
+
+  #feature .section-text p {
+    font-size: 0.7rem;
   }
 
   #feature .section-image {
@@ -675,6 +752,25 @@ li {
   #about .section-image {
     flex-basis: 100px;
     margin: 0 auto 20px;
+    padding-top: 0px;
+  }
+
+  #about .section-image img{
+    height: 100px;
+    width: 250px;
+  }
+
+  #about .section-text{
+  font-size: 0.8rem;
+  }
+
+  #about span{
+    font-size: 5px;
+    width: 100%;
+  }
+
+  #about .section-desc span br{
+    display: none
   }
 
   #skill .card-wrapper {
@@ -729,7 +825,7 @@ li {
   }
 
   #contact .contact-list ul {
-    width: 100px;
+    width: 85vw;
   }
 
   #contact .contact-list li img {
@@ -742,5 +838,27 @@ li {
 
   #footer .inner {
     padding: 20px 0;
+  }
+
+  #about .about-desc {
+    padding: 30px 0 0 0;
+    display: block!important;
+  }
+
+  #about .about-desc li {
+    padding-bottom: 10px;
+  }
+
+  #about .desc-title {
+    padding-bottom: 20px;
+    border: none;
+  }
+
+  #career .section-intro {
+    width: 90vw;
+    text-align: left;
+  }
+  #career .section-intro br {
+    display:none;
   }
 }
