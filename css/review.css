@@ -122,7 +122,7 @@
   }
   .oneArea .onebox .fukidasi {
     padding: 15px;
-    font-size: 14px;
+    /* font-size: 14px; */
   }
   .oneArea .onebox .fukidasi::before {
     top: 8px;

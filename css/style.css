@@ -316,6 +316,8 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 70vw;
+  margin: 0 auto;
 }
 
 #feature .section-image {
@@ -731,6 +733,10 @@ li {
     margin: 0 auto;
   }
 
+  #feature .section-body {
+    width: 90%;
+  }
+
   #feature .section-image,
   #feature .section-desc {
     flex-basis: 100%;
@@ -852,6 +858,12 @@ li {
   #about .desc-title {
     padding-bottom: 20px;
     border: none;
+  }
+
+  #about span {
+    font-size: 5px;
+    line-height: 1.2;
+    width: 100%;
   }
 
   #career .section-intro {
